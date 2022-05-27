@@ -1,12 +1,19 @@
 package Question3;
 
 public class Engine {
-	
-		int rmp;
-        int Power;
-		String manufacturer;
-		Boolean hasTurbo=false;
+	private int rmp;
+	private int Power;
+	private String manufacturer;
+	private Boolean hasTurbo;
+		public Engine(int rmp, int power, String manufacturer) {
 		
+		this.rmp = rmp;
+		Power = power;
+		this.manufacturer = manufacturer;
+		
+	}
+		
+	Engine(){};
 		public void hasturbo(Boolean hasTurbo) {
 			if( hasTurbo==true) {
 				this.hasTurbo=true;
@@ -31,7 +38,12 @@ public class Engine {
 		public String getManufacturer() {
 			return manufacturer;
 		}
-		
+		public void displayCourseDetails() {
+			System.out.println("RPM is :"+rmp);
+			System.out.println("manufacturer is :"+manufacturer);
+			System.out.println("Power is :"+Power);
+			
+		}
 	}
 
 

@@ -4,9 +4,18 @@ public class Car {
 	private String model;
 	private String companyName;
 	private String Color;
-	Engine engine=new Engine();
+	private Engine engine;
+	
+	public Car(String model, String companyName, String color, Engine engine) {
+		super();
+		this.model = model;
+		this.companyName = companyName;
+		Color = color;
+		this.engine = engine;
+	}
 	
 	Car(){};
+	
 	public void setModel(String model) {
 		this.model=model;
 	}

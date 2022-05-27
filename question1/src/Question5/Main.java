@@ -7,6 +7,18 @@ public class Main {
 		
 			
 			Shapes s=new Shapes();
+			Circle c=new Circle();
+			Rectangle r=new Rectangle();
+			
+			Square S=new Square();
+			r.setBreadth(3);
+			r.setLength(5);
+			S.setSide(2);
+			c.setRadius(5);
+			s.area(c);
+			s.area(r);
+			s.area(S);
+			
 
 		
 	}
